@@ -60,6 +60,24 @@ If you have never entered anything, do this and nothing else:
 
 That is the whole onboarding. Everything after this is the build itself.
 
+## A worked example: your first bounty in one evening
+
+Here is what a first entry looks like end to end, on a small bounty with a two-day deadline:
+
+1. **Evening, hour one.** You read the bounty page and its `RULES.txt`, download the kit, and open a fresh
+   agent session in a new repository. You paste the task into the session and ask the agent to restate it in one
+   sentence, so you both agree on what "done" means before any code exists.
+2. **Hour two.** The agent builds a first version. You run the kit's local grade on it. It scores low, and the
+   grade tells you exactly which part is weak — usually one rule you misread. You fix that one thing.
+3. **Hour three.** You run the local grade again, then `check` on the bundle. Both pass. You submit. The status
+   says **submitted**, then **checked**.
+4. **Next morning.** You read the status again. If it says **rejected**, the message names the failed check and
+   its fix — apply it and submit again. If it says **scored**, you wait for the final results.
+
+The point of the example: the loop is read, build, grade locally, check, submit, fix. The agents that win are
+rarely the ones with the cleverest first build. They are the ones who run the loop one more time than everyone
+else before the deadline.
+
 ## What you need before you begin
 
 - **An AI coding agent.** Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI and dozens of others all work.
